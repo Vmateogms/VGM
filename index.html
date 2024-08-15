@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Guay</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <h1 class="titulo">Temas</h1>
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="parent">
+      <div class="div1">
+        <div class="with-scrollbar">
+          <div class="with-scrollbar-content">
+        <p>Pagina prueba</p>
+        <p>Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, </p>
+        <p>Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, </p>
+        <p>Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, Es una pagina de prueba, </p>
+      </div> 
+  </div>
+      </div>
+      <div class="div4">4</div>
+      <div class="div5">
+        <div class="theme-container">
+        <label class="tema">Tema:
+          <select data-theme-picker name="themepicker" id="theme">
+            <option value="💻">💻 Por defecto</option>
+            <option value="☀️">☀️ Clarito</option>
+            <option value="🌑">🌑 Oscuro</option>
+            <option value="🙃">🙃 Graciosito</option>
+            <option value="🎷">🎷 Jazz</option>
+          </select>
+        </label>
+      </div>
+      <div class="center-content">
+        <div class="VGM">
+          VGM
+        </div>
+      </div>
+
+      </div>
+      <div class="div6">
+        <div class="TextoDiv6">
+          Texto
+      </div>
+      <img loading="lazy" src="imagenrobada2.svg" alt="">
+      </div>
+      <div class="div8">8</div>
+  </div>
+    
+    <script>
+
+      const audio = new Audio ('Careless Whisper.mp3');
+      audio.preload = 'auto';
+
+      document.getElementById("theme").addEventListener("change", (event) => {
+        const selectedTheme = event.target.value;
+
+        if (selectedTheme === '🎷') {
+          openPageAndPlayMusic('sexy.html');
+        }
+
+      });
+
+      function openPageAndPlayMusic(url) {
+
+       audio.play();
+      
+        setTimeout(() => {
+          window.location.href = url;
+        },);
+      }
+      
+
+
+
+    </script>
+
+  
+</div>
+
+<br>
+<br>
+
+<div class="boton">
+     <a class="boton" href="sexy.html">Click me</a>
+</div>
+
+<br>
+<br>
+
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Guay</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <h1 class="titulo">Miau</h1>
+    <label>Tema:
+      <select data-theme-picker name="themepicker" id="theme">
+        <option value="💻">💻 Por defecto</option>
+        <option value="☀️">☀️ Clarito</option>
+        <option value="🌑">🌑 Oscuro</option>
+        <option value="🙃">🙃 Graciosito</option>
+        <option value="🎷">🎷 Jazz</option>
+      </select>
+    </label>
+    
+    <script>
+
+      document.getElementById("theme").value = '🎷';
+
+      const audio = new Audio('Careless Whisper.mp3');
+      audio.preload = 'auto';
+      audio.play();
+
+
+          document.getElementById("theme").addEventListener("change", (event) => {
+        const selectedTheme = event.target.value;
+
+        if (selectedTheme === '💻' || selectedTheme === '☀️' || selectedTheme === '🌑' || selectedTheme === '🙃') {
+            window.location.href = 'index.html';
+        }
+       });
+
+
+    </script>
+ <br>
+ <br>
+ <br>
+ <br>
+
+    
+
+
+
+    <br>
+    <br>
+    <br>
+    
+    <div class="with-scrollbar">
+        <div class="with-scrollbar-content">
+      <p>Meow</p>
+      
+            <img class="image" src="Gati.png" alt="gato">
+
+
+    </div> 
+</div>
+</body>
+</html>
